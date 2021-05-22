@@ -1,0 +1,23 @@
+<!--pages/addFunction/addFunction.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item" bindtap="choujiang">
+      <text>点击抽奖</text>
+    </view>
+    <view class="list-item" bindtap="setProb">
+      <text>设置中奖概率</text>
+    </view>
+    <view class="list-item" bindtap="getProb">
+      <text>查看中奖概率</text>
+    </view>
+    <view class="list-item" wx:if="{{result}}">
+      <text class="request-text">调用结果：{{result}}</text>
+    </view>
+    <view class="list-item" wx:if="{{prob}}">
+      <text class="request-text">当前中奖概率:{{prob}}</text>
+    </view>
+  </view>
+
+
+</view>
